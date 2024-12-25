@@ -27,36 +27,28 @@ Once you have Rust installed, follow these steps to set up the project:
 
 In your terminal or command prompt, run the following command to create a new project:
 
-```bash
-cargo init calc_cli --bin
+`cargo init calc_cli --bin`
+
 This will create a new folder called calc_cli with the necessary files for a Rust project, including a Cargo.toml and a src folder.
 
-b. Replace main.rs:
+#### b. Replace main.rs:
 After running cargo init, navigate to the src folder of your newly created project (calc_cli/src/). Replace the automatically generated main.rs file with the main.rs file from this repository.
 
 To do this, download or copy the contents of main.rs from this repository into the src/main.rs file of your project.
 
-2. Run the Program
+#### 2. Run the Program
 Once you've set up the project with the correct main.rs file:
 
 Navigate to your project directory (if you aren't already there):
-
-bash
-Copy code
-cd calc_cli
+`cd calc_cli`
 Build and run the program using Cargo:
-
-bash
-Copy code
-cargo run
+`cargo run`
 Follow the prompts to interact with the calculator:
 
 Enter the first and second numbers.
 Choose an operation (Add, Subtract, Multiply, Divide).
 See the result displayed in the console.
-Example Output
-sql
-Copy code
+```Example Output: 
 WELCOME TO THE SIMPLE CALCULATOR!
 
 Please enter the first number: 5
@@ -71,6 +63,3 @@ OPERATION LIST:
 Please choose an operation number from the list (1-4): 1
 
 ADD: 5 + 3 = 8.00
-Error Handling
-If you enter invalid numbers (non-numeric input), the program will ask you to input valid numbers.
-If you try to divide by zero, the program will display an error: Division by zero is not allowed!.
